@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+maldives = Destination.create(name: "Maldives")
+tahiti = Destination.create(name: "Tahiti")
+fiji = Destination.create(name: "Fiji")
