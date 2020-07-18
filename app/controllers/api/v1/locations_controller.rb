@@ -1,7 +1,14 @@
 class Api::V1::LocationsController < ApplicationController
     def index
         locations = Location.all
-        render json: locations
+        # render json: locations
+        render json: LocationSerializer.new(locations)
+        # options = {
+        #     # include the associated destination
+        #     include: [:destination]
+        # }
+        # to add a relationship in the serializer
+        # render json: LocationSerializer.new(locations, options)
     end
 
     def create

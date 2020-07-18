@@ -1,4 +1,5 @@
 class LocationSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :description, :image_url, :destination_id, :destination
+  # belongs_to :destination
 end
