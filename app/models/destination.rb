@@ -1,3 +1,3 @@
 class Destination < ApplicationRecord
-    has_many :locations
+    has_many :locations, dependent: :destroy
 end
