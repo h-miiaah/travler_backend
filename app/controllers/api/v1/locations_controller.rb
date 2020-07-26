@@ -14,7 +14,7 @@ class Api::V1::LocationsController < ApplicationController
     def create
         location = Location.new(location_params)
         if location.save
-            render json: location, status: :accepted
+            render json: LocationSerializer.new(location), status: :accepted
         else
             render json: {errors: location.errors.full_messages}, status: :unprocessible_entity
         end
