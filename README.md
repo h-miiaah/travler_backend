@@ -1,24 +1,25 @@
-# README
+# Travler - Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Travler is a single page application that displays all types of locations people would like to visit or have already visited. There is also a small description of what the location has to offer and an exciting picture!
 
-Things you may want to cover:
+There are 2 models in this API. The main model is the location which has a name, description, and an image. The location also belongs_to the second model destination. The destination model has a name that baisically describes the type of location whether it's adventurous, a city, nature, or even just a random location. Also the destination has_many locations.
 
-* Ruby version
+## To get the API running:
 
-* System dependencies
+Simply fork and clone the repository
 
-* Configuration
+```bash
+1. cd into the travler_backend directory
+2. run rails s
+3. open localhost:3000/api/v1/locations in your browser
+```
 
-* Database creation
+Now the API is ready to use. Here you will be able to see all locations and their destination type.
 
-* Database initialization
+## View the Travler Frontend:
 
-* How to run the test suite
+```bash
+https://github.com/h-miiaah/travler_frontend
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+&copy; 2020 Travler
