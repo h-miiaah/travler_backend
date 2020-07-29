@@ -10,8 +10,10 @@ Simply fork and clone the repository
 
 ```bash
 1. cd into the travler_backend directory
-2. run rails s
-3. open localhost:3000/api/v1/locations in your browser
+2. run rails db:migrate
+3. run rails db:seed
+4. run rails s
+5. open localhost:3000/api/v1/locations in your browser
 ```
 
 Now the API is ready to use. Here you will be able to see all locations and their destination type.
