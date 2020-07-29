@@ -2,7 +2,7 @@
 
 Travler is a single page application that displays all types of locations people would like to visit or have already visited. There is also a small description of what the location has to offer and an exciting picture!
 
-There are 2 models in this API. The main model is the location which has a name, description, and an image. The location also belongs_to the second model destination. The destination model has a name that baisically describes the type of location whether it's adventurous, a city, nature, or even just a random location. Also the destination has_many locations.
+There are 2 models in this API. The main model is the location which has a name, description, and an image. The location also belongs_to the second model destination. The destination model has a name that basically describes the type of location whether it's adventurous, a city, nature, or even just a random location. Also the destination has_many locations.
 
 ## To get the API running:
 
