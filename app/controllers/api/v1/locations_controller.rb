@@ -30,6 +30,7 @@ class Api::V1::LocationsController < ApplicationController
     end
 
     def destroy
+        # binding.pry
         location = Location.find_by(id: params[:id])
         location.destroy
         render json: location
